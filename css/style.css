@@ -9,83 +9,64 @@ body {
     font-family: 'Nerko One', cursive;
 }
 
-main {
-    height: 1000px;
-}
-main::after {
-	content: "" ;
-	display: table;
-	clear: both;
-}
-
-.container {
-  width: 50%;
-  margin: auto;
-}
-
 header {
     text-align: center;
     font-size: 50px;
     color: white;
 }
 
-.first-row div,
-.second-row div,
-.third-row div {
+.container {
+    width: 50%;
+    margin: auto;
+  }
+
+main {
+    height: 1000px;
+}
+
+main::after {
+	content: "" ;
+	display: table;
+	clear: both;
+}
+
+.row {
+    height: 250px;
+    margin-bottom: 2%;
+}
+
+/*
+1: background della card non visualizzato
+2. visualizzi img
+3. visualizzi p
+
+*/
+
+.card {
+    position: relative;
+    height: 250px;
+    width: 22%;
+    margin: 1%;
+    float: left;
     border-radius: 10px;
     background-image: url(../img/pattern.png);
     background-repeat: repeat;
     background-size: contain;
 }
-
-.first-row, 
-.second-row,
-.third-row {
-    height: 250px;
-    margin-bottom: 2%;
+.card img {
+    width: 100%;
+    visibility: hidden;
 }
-
-/* .first-row p {
-    display: inline-block;
-    float: left;
-} */
-
-.first-row div {
-    height: 250px;
-    width: 22%;
-    float: left;
-    background-color: red;
+.card p {
+    display: none;
+    position: absolute;
+    bottom: 3%;
+    left: 17%;
+    font-size: 35px;
+    color: #E61986
 }
-.first-row div:nth-child(2) {
-    margin: 0 2% 0 4%;
-}
-.first-row div:nth-child(3) {
-    margin: 0 4% 0 2%;
+.card:hover {
+    color:lightcoral;
+
 }
 
-.second-row div {
-    height: 250px;
-    width: 22%;
-    float: left;
-    background-color: red;
-}
-.second-row div:nth-child(2) {
-    margin: 0 2% 0 4%;
-}
-.second-row div:nth-child(3) {
-    margin: 0 4% 0 2%;
-}
-
-
-.third-row div {
-    height: 250px;
-    width: 22%;
-    float: left;
-    background-color: red;
-}
-.third-row div:nth-child(2) {
-    margin: 0 2% 0 4%;
-}
-.third-row div:nth-child(3) {
-    margin: 0 4% 0 2%;
-}
