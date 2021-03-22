@@ -1,0 +1,105 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ADD8E6;
+    font-family: 'Nerko One', cursive;
+}
+
+main {
+    height: 1000px;
+}
+main::after {
+	content: "" ;
+	display: table;
+	clear: both;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+div {
+    border-radius: 10px;
+}
+
+/* .first-row, 
+.second-row,
+.third-row {
+    display: inline-block;
+    background-color: teal;
+    float: left;
+} */
+
+.first-row, 
+.second-row,
+.third-row {
+    height: 250px;
+    margin-bottom: 2%;
+    /* background-color: tomato; */
+}
+
+.first-row p {
+    display: inline-block;
+    float: left;
+}
+
+.first-row div {
+    height: 250px;
+    width: 22%;
+    float: left;
+    background-color: red;
+}
+.first-row div:nth-child(2) {
+    margin: 0 2% 0 4%;
+}
+.first-row div:nth-child(3) {
+    margin: 0 4% 0 2%;
+}
+
+.second-row div {
+    height: 250px;
+    width: 22%;
+    float: left;
+    background-color: red;
+}
+.second-row div:nth-child(2) {
+    margin: 0 2% 0 4%;
+}
+.second-row div:nth-child(3) {
+    margin: 0 4% 0 2%;
+}
+
+
+.third-row div {
+    height: 250px;
+    width: 22%;
+    float: left;
+    background-color: red;
+}
+.third-row div:nth-child(2) {
+    margin: 0 2% 0 4%;
+}
+.third-row div:nth-child(3) {
+    margin: 0 4% 0 2%;
+}
+
+/* .second-row {
+    height: 250px;
+    background-color:yellow;
+}
+
+.third-row {
+    height: 250px;
+    background-color: lightcoral;
+} */
