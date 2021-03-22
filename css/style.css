@@ -29,30 +29,26 @@ header {
     color: white;
 }
 
-div {
+.first-row div,
+.second-row div,
+.third-row div {
     border-radius: 10px;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+    background-size: contain;
 }
-
-/* .first-row, 
-.second-row,
-.third-row {
-    display: inline-block;
-    background-color: teal;
-    float: left;
-} */
 
 .first-row, 
 .second-row,
 .third-row {
     height: 250px;
     margin-bottom: 2%;
-    /* background-color: tomato; */
 }
 
-.first-row p {
+/* .first-row p {
     display: inline-block;
     float: left;
-}
+} */
 
 .first-row div {
     height: 250px;
@@ -93,13 +89,3 @@ div {
 .third-row div:nth-child(3) {
     margin: 0 4% 0 2%;
 }
-
-/* .second-row {
-    height: 250px;
-    background-color:yellow;
-}
-
-.third-row {
-    height: 250px;
-    background-color: lightcoral;
-} */
